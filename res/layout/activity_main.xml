@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#2C3E50"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GAME+"
+        android:textSize="36sp"
+        android:textColor="#ECF0F1"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btn_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#34495E"
+        android:text="Guest"
+        android:textAllCaps="false"
+        android:textColor="#ECF0F1"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        app:icon="@android:drawable/ic_menu_myplaces"
+        style="@style/Widget.MaterialComponents.Button.Icon" />
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/search_bar_background"
+        android:hint="Cerca un gioco..."
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="10dp"
+        android:elevation="4dp"
+        android:inputType="text"
+        android:textColor="#2C3E50"
+        android:textColorHint="#7F8C8D"
+        android:importantForAutofill="no" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/main_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            app:alignmentMode="alignMargins">
+
+            <ImageButton
+                android:id="@+id/btn_tris"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#E74C3C"
+                android:contentDescription="tris"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tic_tac_toe"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_sudoku"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#3498DB"
+                android:contentDescription="sudoku"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sudoku"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_impostore"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#F1C40F"
+                android:contentDescription="impostore"
+                android:scaleType="fitCenter"
+                android:src="@drawable/impostore"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_dama"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#2ECC71"
+                android:contentDescription="dama"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dama"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_obbligo_verita"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#9B59B6"
+                android:contentDescription="obbligo o verità"
+                android:scaleType="fitCenter"
+                android:src="@drawable/obbligo_o_verita"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_impiccato"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#7F8C8D"
+                android:contentDescription="impiccato"
+                android:scaleType="fitCenter"
+                android:src="@drawable/impiccato"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_tap_challenge"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#E67E22"
+                android:contentDescription="tap challenge"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tap_challenge"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_flappy_bird"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#F39C12"
+                android:contentDescription="flappy bird"
+                android:scaleType="fitCenter"
+                android:src="@drawable/flappy_bird"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_indovina_parola"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#8E44AD"
+                android:contentDescription="indovina la parola"
+                android:scaleType="fitCenter"
+                android:src="@drawable/heads_up"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_random_tools"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#F39C12"
+                android:contentDescription="moneta e dadi"
+                android:scaleType="fitCenter"
+                android:src="@drawable/random_tools"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_scegli_numero"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#16A085"
+                android:contentDescription="scegli un numero"
+                android:scaleType="fitCenter"
+                android:src="@drawable/random_number"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_charades"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#E67E22"
+                android:contentDescription="charades mimo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/charades"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_ricco"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#2980B9"
+                android:contentDescription="chi vuol essere ricco"
+                android:scaleType="fitCenter"
+                android:src="@drawable/chi_vuol_essere_ricco"
+                app:layout_columnWeight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_fanta"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="#FFD700"
+                android:contentDescription="fanta"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logofantaplus"
+                app:layout_columnWeight="1" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </ScrollView>
+
+</LinearLayout>

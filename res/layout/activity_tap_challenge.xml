@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#2C3E50"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tempo: 10s"
+        android:textColor="#ECF0F1"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punti: 0"
+        android:textColor="#F1C40F"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btn_tap"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="TAP!"
+        android:textSize="30sp"
+        android:backgroundTint="#E67E22"
+        android:shape="ring" />
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Riprova"
+        android:visibility="gone" />
+
+</LinearLayout>

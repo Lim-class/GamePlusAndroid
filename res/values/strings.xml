@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GamePlus</string>
+
+    <string-array name="livelli_tris">
+        <item>Facile</item>
+        <item>Medio</item>
+        <item>Impossibile</item>
+        <item>Due Giocatori</item>
+    </string-array>
+</resources>

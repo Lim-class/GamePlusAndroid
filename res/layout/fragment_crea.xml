@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea Nuova Lega"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#002D57"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etNomeLegaCrea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome della Lega"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/etPasswordLegaCrea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password (lascia vuoto se pubblica)"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etCreditiLegaCrea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Crediti iniziali per utente"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modalità di acquisizione personaggi:"
+            android:textStyle="bold"
+            android:textColor="#002D57"/>
+
+        <RadioGroup
+            android:id="@+id/rgModalita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbStandard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Il primo che arriva sceglie"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbAsta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asta (prezzo più alto)"/>
+
+            <RadioButton
+                android:id="@+id/rbMultiuso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Utilizzabili da più utenti"/>
+        </RadioGroup>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD" android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Impostazioni Calendario"
+            android:textStyle="bold"
+            android:textColor="#002D57"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Inizio Mercato:"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <Spinner android:id="@+id/spinGiornoInizio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <EditText android:id="@+id/etOraInizio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Ora (es. 12:00)"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fine Mercato:"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <Spinner android:id="@+id/spinGiornoFine" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <EditText android:id="@+id/etOraFine" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Ora (es. 20:00)"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Orario Aggiornamento Classifiche:"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="16dp">
+            <Spinner android:id="@+id/spinGiornoCalcolo" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <EditText android:id="@+id/etOraCalcolo" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Ora (es. 23:30)"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD" android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regolamento Punti"
+            android:textStyle="bold"
+            android:textColor="#002D57"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/etNomeRegola"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Es: Gol, Fallo..." />
+
+            <EditText
+                android:id="@+id/etPuntiRegola"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Punti"
+                android:inputType="numberSigned" />
+
+            <Button
+                android:id="@+id/btnAddRegola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:backgroundTint="#66CCB3"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAnteprimaRegole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nessuna regola inserita."
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:background="#F0F0F0"
+            android:textColor="#555555"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/btnConfermaCreaLega"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="CREA LEGA"
+            android:backgroundTint="#002D57"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

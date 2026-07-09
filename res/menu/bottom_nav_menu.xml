@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_partecipa"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Partecipa" />
+    <item
+        android:id="@+id/nav_in_corso"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="In Corso" />
+    <item
+        android:id="@+id/nav_crea"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Crea" />
+</menu>

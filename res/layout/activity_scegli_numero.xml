@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#2C3E50"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCEGLI UN NUMERO"
+        android:textColor="#ECF0F1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/edit_min"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Valore Minimo"
+        android:inputType="number"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/edit_max"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Valore Massimo"
+        android:inputType="number"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btn_genera"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="ESTRAI ORA"
+        android:backgroundTint="#16A085"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txt_risultato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="?"
+        android:textColor="#F1C40F"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>

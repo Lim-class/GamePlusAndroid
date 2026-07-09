@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1C">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/layout_setup_nomi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inserisci nomi (separati da virgola):"
+                android:textColor="#F1C40F"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/edit_nomi_giocatori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marco, Anna, Luca..."
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F1C40F"/>
+
+            <Button
+                android:id="@+id/btn_conferma_nomi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INIZIA PARTITA"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#F1C40F"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_gioco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <TextView android:id="@+id/txt_giocatore_num"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Nome" android:textColor="#F1C40F" android:textSize="26sp" />
+
+            <TextView android:id="@+id/txt_parola_segreta"
+                android:layout_width="match_parent" android:layout_height="150dp"
+                android:background="#2C3E50" android:gravity="center"
+                android:text="Tocca per vedere" android:textColor="#FFFFFF"
+                android:textSize="28sp" android:layout_marginTop="20dp" />
+
+            <Button android:id="@+id/btn_prossimo"
+                android:layout_width="match_parent" android:layout_height="60dp"
+                android:text="PASSA TELEFONO" android:layout_marginTop="20dp"
+                android:backgroundTint="#F1C40F" android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_classifica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Classifica:"
+            android:textColor="#BDC3C7"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</ScrollView>

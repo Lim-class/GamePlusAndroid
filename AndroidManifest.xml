@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/game"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Game"
+        tools:targetApi="31">
+        <activity
+            android:name=".ProfiloActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClassificaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MiaSquadraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DettaglioLegaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GestioneLegaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeFantaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FantaLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChiVuolEssereRiccoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RandomToolsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScegliNumeroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FlappyBirdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TapChallengeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GenericWordGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImpiccatoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginEstremoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GamePlayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ObbligoVeritaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DamaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImpostoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SudokuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
